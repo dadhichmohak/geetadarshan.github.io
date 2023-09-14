@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.header {
+    background: #262626;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 5vh;
+    margin-bottom: 2%;
+}
+
+.logo {
+    margin-left: 1vw;
+}
+
+.logo img {
+
+    height: 70px;
+}
+
+.menu {
+    /* display:flex; */
+    flex: 1;
+    text-align: right;
+    margin-right: 5%;
+}
+
+
+.menu a {
+    color: #fafaff;
+    text-decoration: none;
+    margin: 0 1%;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 2px solid transparent;
+    padding-bottom: 0.5%;
+
+}
+
+.menu a:hover {
+    border-bottom: 2px solid aquamarine;
+}
+
+#current-page {
+    color: aquamarine;
+    border-bottom: 2px solid #FAFAFF;
+}
+
+
+
+
+
+/* welcome to Freshers dwar */
+.middle-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fafaff;
+}
+
+.middle-section h1 {
+    color: #30343f;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.iitians {
+    color: red;
+}
+
+
+.intro-animation {
+    display: inline-block;
+    color: #3a0ca3;
+    /* color: transparent; */
+    /* -webkit-text-stroke: 2px solid #3a0ca3; */
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    animation: introFadeIn 2s ease-in-out;
+}
+
+@keyframes introFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.middle-section p {
+    font-size: 20px;
+    color: #30343f;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* button */
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #2a9d8f;
+    color: #fafaff;
+    font-size: 14px;
+    font-family: cursive;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+/* Color change on hover */
+.button:hover {
+    background-color: #fcbf49;
+    color: #30343f;
+}
+
+
+
+
+
+
+
+.animated-div {
+    text-align: center;
+    font-size: 16px;
+    
+    margin: 2vh 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    animation: changeColor 2s ease infinite, scroll-text 15s cubic-bezier(0.1, 0.25, 0.75, 1) infinite;
+}
+
+@keyframes changeColor {
+    0% {
+        color: blue;
+    }
+
+    50% {
+        color: red;
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+    margin-top: 2vh;
+    background-color: #262626;
+    color: #fafaff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.footer-links {
+    margin-top: 5vh;
+}
+
+.footer-links {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fafaff;
+    font-size: 14px;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+.footer-links a:hover {
+    color: aqua;
+}
